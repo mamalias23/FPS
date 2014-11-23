@@ -3,12 +3,12 @@
 		<div class="col-md-4">
 			<h3>Quick links:</h3>
 			<ul class="list-group">
-				<li class="list-group-item"><a href="#"><i class="fa fa-home"></i> Home</a></li>
-				<li class="list-group-item"><a href="#"><i class="fa fa-smile-o"></i> About Us</a></li>
-				<li class="list-group-item"><a href="#"><i class="fa fa-envelope-o"></i> Contact Us</a></li>
-				<li class="list-group-item"><a href="#"><i class="fa fa-globe"></i> Web Development</a></li>
-				<li class="list-group-item"><a href="#"><i class="fa fa-globe"></i> Web Design</a></li>
-				<li class="list-group-item"><a href="#"><i class="fa fa-cogs"></i> SEO</a></li>
+				<li class="list-group-item"><a href="{{ url('/') }}"><i class="fa fa-home"></i> Home</a></li>
+				<li class="list-group-item"><a href="{{ url('about-us') }}"><i class="fa fa-smile-o"></i> About Us</a></li>
+				<li class="list-group-item"><a href="{{ url('contact-us') }}"><i class="fa fa-envelope-o"></i> Contact Us</a></li>
+				<li class="list-group-item"><a href="{{ url('web-development') }}"><i class="fa fa-globe"></i> Web Development</a></li>
+				<li class="list-group-item"><a href="{{ url('web-design') }}"><i class="fa fa-globe"></i> Web Design</a></li>
+				<li class="list-group-item"><a href="{{ url('seo') }}"><i class="fa fa-cogs"></i> SEO</a></li>
 			</ul>
 		</div>
 		<div class="col-md-4">

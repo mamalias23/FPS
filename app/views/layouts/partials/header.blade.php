@@ -44,12 +44,12 @@
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-9" style="padding-left:0px">
 					<ul class="nav navbar-nav">
-						<li class="active"><a href="#">Home</a></li>
-						<li><a href="#">About Us</a></li>
-						<li><a href="#">Contact Us</a></li>
-						<li><a href="#">Web Development</a></li>
-						<li><a href="#">Web Design</a></li>
-						<li><a href="#">SEO</a></li>
+						<li class="{{\Request::is('/') ? 'active':''}}"><a href="{{ url('/') }}">Home</a></li>
+						<li class="{{\Request::is('about-us') ? 'active':''}}"><a href="{{ url('about-us') }}">About Us</a></li>
+						<li class="{{\Request::is('contact-us') ? 'active':''}}"><a href="{{ url('contact-us') }}">Contact Us</a></li>
+						<li class="{{\Request::is('web-development') ? 'active':''}}"><a href="{{ url('web-development') }}">Web Development</a></li>
+						<li class="{{\Request::is('web-design') ? 'active':''}}"><a href="{{ url('web-design') }}">Web Design</a></li>
+						<li class="{{\Request::is('seo') ? 'active':''}}"><a href="{{ url('seo') }}">SEO</a></li>
 					</ul>
 				</div><!-- /.navbar-collapse -->
 			</div><!-- /.container-fluid -->
